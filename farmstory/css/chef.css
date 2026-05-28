@@ -130,6 +130,7 @@ main > div {
 #sub > .introduce {
     width: 980px;
     height: 650px;
+    overflow: hidden;
 }
 
 /* 왼쪽 사이드 */
@@ -170,23 +171,54 @@ main > div {
     font-size: 0;
 }
 
-/* 현재 페이지 */
-#sub > .introduce > aside > ul > li.on:nth-child(1) > a {
-    background-image: url('../images/sub_cate4_lnb1_ov.png');
+/* 기본 이미지 */
+#sub > .introduce > aside > ul > li:nth-child(1) > a {
+    background-image: url('../images/sub_cate5_lnb1.png');
 }
 
+#sub > .introduce > aside > ul > li:nth-child(2) > a {
+    background-image: url('../images/sub_cate5_lnb2.png');
+}
+#sub > .introduce > aside > ul > li:nth-child(3) > a {
+    background-image: url('../images/sub_cate5_lnb3_ov.png');
+}
+#sub > .introduce > aside > ul > li:nth-child(4) > a {
+    background-image: url('../images/sub_cate5_lnb4.png');
+}
+#sub > .introduce > aside > ul > li:nth-child(5) > a {
+    background-image: url('../images/sub_cate5_lnb5.png');
+}
+
+/* hover */
+#sub > .introduce > aside > ul > li:nth-child(1) > a:hover {
+    background-image: url('../images/sub_cate5_lnb1_ov.png');
+}
+
+#sub > .introduce > aside > ul > li:nth-child(2) > a:hover {
+    background-image: url('../images/sub_cate5_lnb2_ov.png');
+}
+#sub > .introduce > aside > ul > li:nth-child(3) > a:hover {
+    background-image: url('../images/sub_cate5_lnb3_ov.png');
+}
+#sub > .introduce > aside > ul > li:nth-child(4) > a:hover {
+    background-image: url('../images/sub_cate5_lnb4_ov.png');
+}
+#sub > .introduce > aside > ul > li:nth-child(5) > a:hover {
+    background-image: url('../images/sub_cate5_lnb5_ov.png');
+}
+
+/* 현재 페이지 */
+
+#sub > .introduce > aside > ul > li.on:nth-child(3) > a {
+    background-image: url('../images/sub_cate5_lnb3_ov.png');
+}
 
 
 /* 오른쪽 본문 */
-.event{
-    object-fit: cover;
-    position: relative;
-    top: 40px;
-}
 #sub > .introduce > article {
     float: right;
     width: 802px;
-    height: 800px;
+    height: 990px;
     padding-left: 40px;
     box-sizing: border-box;
 }
@@ -266,11 +298,24 @@ main > div {
     width: 760px;
     height: 400px;
 }
+#sub > .introduce > section > section:nth-of-type(1){
+    width: 762px;
+    height: 197px;
+    background-color: #f9f9f9;
+    border: #e3e3e3 1px solid;
+    display: flex;
+    
+}
+#sub > .introduce > article > section:nth-of-type(2){
+    width: 762px;
+    height: 178px;
+    background-color: #f9f9f9;
+    border: #e3e3e3 1px solid;
+}
 
 /* 푸터 */
 footer {
     position: relative;
-    top: 100px;
     width: 100%;
     height: 120px;
     border-top: 1px solid #D1CAB2;
